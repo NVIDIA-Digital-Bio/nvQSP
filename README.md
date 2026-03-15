@@ -3,18 +3,13 @@
 GPU-accelerated RODAS4 stiff ODE solver for Quantitative Systems Pharmacology
 (QSP) and PBPK population studies.
 
-## What's In This Release
+## Distribution
 
-```
-release/
-├── nvqsp-0.1.0-py3-none-linux_x86_64.whl   Python wheel (pip install)
-├── nvqsp_0.1.0_amd64.deb                    Debian package (C/C++ headers + lib)
-├── libsparse_rodas4.so                       Standalone shared library
-├── README.md                                 This file
-├── INSTALL.md                                Installation guide
-├── API_REFERENCE.md                          Complete Python and C API docs
-└── CHANGELOG.md                              Release notes
-```
+| Channel | Install |
+|---|---|
+| **PyPI** | `pip install nvqsp==0.1.0` |
+| **GitHub Release** | [nvqsp_0.1.0_amd64.deb](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0) (C/C++ headers + lib) |
+| **GitHub Release** | [libsparse_rodas4.so](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0) (standalone shared library) |
 
 All binaries are fat binaries with native code for:
 - **sm_80** — Ampere (A100, A10)
@@ -34,12 +29,15 @@ build from source.
 
 ## Quick Install
 
-**Python:**
+**Python (from PyPI):**
 ```bash
-pip install nvqsp-0.1.0-py3-none-linux_x86_64.whl
+pip install nvqsp==0.1.0
 ```
 
 **C/C++ (Debian/Ubuntu):**
+
+Download `nvqsp_0.1.0_amd64.deb` from the
+[GitHub release](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0), then:
 ```bash
 sudo dpkg -i nvqsp_0.1.0_amd64.deb
 ```

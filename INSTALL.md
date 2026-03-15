@@ -29,7 +29,7 @@ install the NVIDIA driver first.
 
 ---
 
-## Option 1: Python Wheel (recommended)
+## Option 1: pip install from PyPI (recommended)
 
 The wheel bundles the compiled solver library inside the Python package. No
 system-wide installation or root access is needed.
@@ -37,7 +37,7 @@ system-wide installation or root access is needed.
 ### Install
 
 ```bash
-pip install nvqsp-0.1.0-py3-none-linux_x86_64.whl
+pip install nvqsp==0.1.0
 ```
 
 ### Dependencies
@@ -103,12 +103,12 @@ The wheel works with virtualenv, conda, and Docker:
 # virtualenv
 python3 -m venv qsp_env
 source qsp_env/bin/activate
-pip install numpy nvqsp-0.1.0-py3-none-linux_x86_64.whl
+pip install nvqsp==0.1.0
 
 # conda
 conda create -n qsp python=3.11 numpy -y
 conda activate qsp
-pip install nvqsp-0.1.0-py3-none-linux_x86_64.whl
+pip install nvqsp==0.1.0
 ```
 
 ### Custom library path
@@ -131,6 +131,8 @@ export QSP_ENGINE_LIB_SPARSE=/path/to/libsparse_rodas4.so
 ## Option 2: Debian Package (C/C++ users)
 
 The `.deb` installs the shared library and public C headers system-wide.
+Download `nvqsp_0.1.0_amd64.deb` from the
+[GitHub release](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0).
 
 ### Install
 
@@ -182,8 +184,10 @@ sudo dpkg -r nvqsp
 
 ## Option 3: Standalone Shared Library
 
-For environments where neither pip nor dpkg is available, you can use the `.so`
-file directly.
+For environments where neither pip nor dpkg is available, download
+`libsparse_rodas4.so` from the
+[GitHub release](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0)
+and use it directly.
 
 ### Copy to your project
 
