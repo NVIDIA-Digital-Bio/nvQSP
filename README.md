@@ -7,7 +7,7 @@ GPU-accelerated RODAS4 stiff ODE solver for Quantitative Systems Pharmacology
 
 | Channel | Install |
 |---|---|
-| **PyPI** | `pip install nvqsp==0.1.0` |
+| **PyPI** | `pip install nvqsp` |
 | **GitHub Release** | [nvqsp_0.1.0_amd64.deb](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0) (C/C++ headers + lib) |
 | **GitHub Release** | [libsparse_rodas4.so](https://github.com/NVIDIA-Digital-Bio/nvQSP/releases/tag/v0.1.0) (standalone shared library) |
 
@@ -31,7 +31,7 @@ build from source.
 
 **Python (from PyPI):**
 ```bash
-pip install nvqsp==0.1.0
+pip install nvqsp
 ```
 
 **C/C++ (Debian/Ubuntu):**

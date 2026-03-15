@@ -37,7 +37,7 @@ system-wide installation or root access is needed.
 ### Install
 
 ```bash
-pip install nvqsp==0.1.0
+pip install nvqsp
 ```
 
 ### Dependencies
@@ -103,12 +103,12 @@ The wheel works with virtualenv, conda, and Docker:
 # virtualenv
 python3 -m venv qsp_env
 source qsp_env/bin/activate
-pip install nvqsp==0.1.0
+pip install nvqsp
 
 # conda
 conda create -n qsp python=3.11 numpy -y
 conda activate qsp
-pip install nvqsp==0.1.0
+pip install nvqsp
 ```
 
 ### Custom library path
